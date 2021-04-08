@@ -18,7 +18,7 @@ exports.arrangement_yes_no =async function(context, event, callback) {
     Remember.question="payment_arrangement";
     Remember.payment_type = 3; 
     
-    Say = `Do you want to make a payment arrangement of your total balance of  ${Memory.userTotalBalance}, say yes or No. you can also press 1 for yes and 2 for no`;  
+    Say = `Do you want to make a payment arrangement of your total balance of $${Memory.userTotalBalance}, say yes or No. you can also press 1 for yes and 2 for no`;  
     Listen = {
         "voice_digits": {
           "num_digits": 1,

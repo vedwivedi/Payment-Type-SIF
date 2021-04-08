@@ -22,13 +22,16 @@ exports.greeting = async function (context, event, callback) {
 
     let userTotalBalance = 800; // Default Amount for testing
     let SIFAmount = 200;
+
     if (Memory.userTotalBalance != undefined)
       userTotalBalance = Number(Memory.userTotalBalance).toFixed(2);
 
-      if (Memory.SIFAmount != undefined)
+    if (Memory.SIFAmount != undefined)
       SIFAmount = Number(Memory.SIFAmount).toFixed(2);
+
     console.log("SIFAmount: " + SIFAmount);
     Remember.SIFAmount = SIFAmount;
+    Remember.userTotalBalance = userTotalBalance;
 
     //Say = `you can pay your full balance of $${userTotalBalance}, or you can make a partial payment or you can make a payment arranagement. Let us know what would you prefer.`;
     //Redirect='task://payment_full';
