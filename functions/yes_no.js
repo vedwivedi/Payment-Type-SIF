@@ -29,7 +29,7 @@ exports.yes_no = async function (context, event, callback) {
 
         }
         else if (event.Field_yes_no_Value === 'No' || event.Field_custom_yes_no_Value === '2') {
-          Redirect = 'task://partial_yes_no';
+          Redirect = 'task://arrangement_yes_no';
           break;
 
         } else {
@@ -38,21 +38,7 @@ exports.yes_no = async function (context, event, callback) {
 
           break;
         }
-      case 'payment_partial':
-        if (event.Field_yes_no_Value === 'Yes' || event.Field_custom_yes_no_Value === '1') {
-          Redirect = 'task://payment_partial';
-          break;
-
-        } else if (event.Field_yes_no_Value === 'No' || event.Field_custom_yes_no_Value === '2') {
-          Redirect = "task://arrangement_yes_no";
-          break;
-
-        } else {
-          Say = false;
-          Redirect = 'task://fallback';
-
-          break;
-        }
+      
       case 'payment_arrangement':
         if (event.Field_yes_no_Value === 'Yes' || event.Field_custom_yes_no_Value === '1') {
           Redirect = "task://payment_arrangement";
@@ -71,24 +57,7 @@ exports.yes_no = async function (context, event, callback) {
 
           break;
         }
-      case 'payment_amount_check':
-        if (event.Field_yes_no_Value === 'Yes') {
-          Listen = false;
-          Remember.say_err_msg = "Okay! Please Say or enter the amount you want to pay. Example, you can say 50 dollars and 25 cents. or you can enter as 5 0 Asterisk 2 5 .";
-          Redirect = "task://payment_partial";
-          break;
-
-        } else if (event.Field_yes_no_Value === 'No') {
-          Say = false;
-          //Redirect = 'task://agent_transfer';
-          break;
-
-        } else {
-          Say = false;
-          Redirect = 'task://fallback';
-
-          break;
-        }
+      
       case 'agent_transfer':
         if (event.Field_yes_no_Value === 'Yes') {
 

@@ -1,7 +1,7 @@
 {
     "friendlyName" : "Payment in full or partial",
     "logQueries" : true,
-    "uniqueName" : "Payment-Type",
+    "uniqueName" : "Payment-Type-SIF",
     "defaults" : {
         "defaults" : {
             "assistant_initiation" : "task://greeting",
@@ -50,11 +50,7 @@
                     "value" : "full",
                     "synonymOf" : null
                 },
-                {
-                    "language" : "en-US",
-                    "value" : "partial",
-                    "synonymOf" : null
-                },
+                
                 {
                     "language" : "en-US",
                     "value" : "arrangement",
@@ -80,16 +76,7 @@
                     "value" : "pay full balance",
                     "synonymOf" : "full"
                 },
-                {
-                    "language" : "en-US",
-                    "value" : "painful",
-                    "synonymOf" : "full"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "hateful",
-                    "synonymOf" : "full"
-                },
+               
                 {
                     "language" : "en-US",
                     "value" : "pay balance",
@@ -109,99 +96,20 @@
                     "language" : "en-US",
                     "value" : "pay with arrangement",
                     "synonymOf" : "arrangement"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "partially",
-                    "synonymOf" : "partial"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "pay partial",
-                    "synonymOf" : "partial"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "partial payment",
-                    "synonymOf" : "partial"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "pay partially",
-                    "synonymOf" : "partial"
-                },
-                {
-                    "language" : "en-US",
-                    "value" : "change",
-                    "synonymOf" : "partial"
                 }
+                
+                
             ]
         }
     ],
     "tasks" : [
-        {
-            "uniqueName" : "payment_partial",
-            "actions" : {
-                "actions" : [
-                    {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
-                    }
-                ]
-            },
-            "fields" : [],
-            "samples" : [
-                {
-                    "language" : "en-US",
-                    "taggedText" : "amount change"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "change now"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "I want to pay some other amount"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "let me change the payment amount"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "change the payment"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "need to change the amount"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "I want to pay a different amount "
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "partial"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "partial payment "
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "change the amount"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "Change the amount."
-                }
-            ]
-        },
+       
         {
             "uniqueName" : "payment_full",
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -213,7 +121,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -283,77 +191,20 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
             "fields" : [],
             "samples" : []
         },
-        {
-            "uniqueName" : "collect_partial_Amount",
-            "actions" : {
-                "actions" : [
-                    {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
-                    }
-                ]
-            },
-            "fields" : [
-                {
-                    "uniqueName" : "dollars",
-                    "fieldType" : "Twilio.NUMBER"
-                },
-                {
-                    "uniqueName" : "cents",
-                    "fieldType" : "Twilio.NUMBER"
-                }
-            ],
-            "samples" : [
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars}.{cents}"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars} {cents}"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "I want to pay {dollars} {cents}"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars} dollars {cents} cents"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "I want to pay {dollars} dollars {cents} cents"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "${dollars}.{cents}"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars} dollars and {cents} cents"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars}{cents}"
-                },
-                {
-                    "language" : "en-US",
-                    "taggedText" : "{dollars}*{cents}"
-                }
-            ]
-        },
+       
         {
             "uniqueName" : "payment_type",
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -375,7 +226,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -463,7 +314,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -475,7 +326,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -581,7 +432,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },
@@ -658,7 +509,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-2275-dev.twil.io/index"
+                        "redirect" : "https://payment-type-3953-dev.twil.io/index"
                     }
                 ]
             },

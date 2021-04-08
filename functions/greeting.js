@@ -20,8 +20,8 @@ exports.greeting = async function (context, event, callback) {
     // this update from VS code.
     // const payment_type = event.Field_payment_type_Value;
 
-    let userTotalBalance = 0; // Default Amount for testing
-    let SIFAmount = 0;
+    let userTotalBalance = 800; // Default Amount for testing
+    let SIFAmount = 200;
     if (Memory.userTotalBalance != undefined)
       userTotalBalance = Number(Memory.userTotalBalance).toFixed(2);
 
