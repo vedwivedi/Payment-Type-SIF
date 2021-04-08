@@ -15,8 +15,8 @@ exports.agent_transfer =async function(context, event, callback) {
   
     Remember.transfer_agent = true;
     Remember.payment_type = 4;
-    Listen=false;
-    Say = false;
+    //Listen=false;
+    Say = " ";
   
     // This callback is what is returned in response to this function being invoked.
   const functions = Runtime.getFunctions();

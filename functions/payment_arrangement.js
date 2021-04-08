@@ -15,7 +15,7 @@ exports.payment_arrangement =async function(context, event, callback) {
     
     Remember.repeat = false;
     Remember.payment_type = 3;
-    Say=""
+    Say = " ";
                
     //End of your code.
     
