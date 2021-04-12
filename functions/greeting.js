@@ -39,7 +39,8 @@ exports.greeting = async function (context, event, callback) {
     // Tasks=['payment_Full'];
 
     if (Number(SIFAmount) > 0) {
-      Say = `Will you pay the reduced balance of $${SIFAmount} in full today. say yes or No. you can also press 1 for yes and 2 for no.`;
+      //Say = `Will you pay the reduced balance of $${SIFAmount} in full today. say yes or No. you can also press 1 for yes and 2 for no.`;
+      Say = `Will you pay the Reduced balance of $${SIFAmount} in full today?  Paying this amount will stop all further collection activity and the account will be closed for less than the full balance. Say Yes or No. You can also press 1 for yes and 2 for No`;
 
       Listen = {
         "voice_digits": {
