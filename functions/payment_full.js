@@ -17,7 +17,7 @@ exports.payment_full =async function(context, event, callback) {
     Remember.task_fail_counter = 0;
    
      Remember.payment_amount = Memory.SIFAmount;
-     Say = "You have selected to pay your full balance.";
+     Say = "You have selected to pay the reduced balance in full today.";
     
   const functions = Runtime.getFunctions();
   let path = functions['responseBuilder'].path;
