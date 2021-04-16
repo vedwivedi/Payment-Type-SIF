@@ -1,5 +1,5 @@
 {
-    "friendlyName" : "Payment in full or arragnment",
+    "friendlyName" : "Payment-Type-SIF",
     "logQueries" : true,
     "uniqueName" : "Payment-Type-SIF",
     "defaults" : {
