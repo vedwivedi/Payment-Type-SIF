@@ -104,7 +104,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -151,7 +151,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -204,7 +204,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -226,7 +226,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -238,7 +238,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -308,7 +308,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -320,7 +320,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
@@ -397,7 +397,7 @@
             "actions" : {
                 "actions" : [
                     {
-                        "redirect" : "https://payment-type-sif-5191-dev.twil.io/index"
+                        "redirect" : "https://payment-type-sif-5085-dev.twil.io/index"
                     }
                 ]
             },
